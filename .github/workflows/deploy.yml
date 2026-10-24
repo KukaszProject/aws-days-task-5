@@ -14,6 +14,7 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_session_token: ${{ secrets.AWS_SESSION_TOKEN }}
           application_name: cmtr-ac643e5v-app
           environment_name: cmtr-ac643e5v-env
           version_label: ${{ github.sha }}
